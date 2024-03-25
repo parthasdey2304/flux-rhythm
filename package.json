@@ -1,0 +1,12 @@
+{
+  "name" :"Flux Rhythm",
+  "version": "1.0.0",
+  "author": "Parth Vastavik",
+  "main": "main.js",
+  "dependencies": {
+    "electron": "^29.1.5"
+  },
+  "scripts" : {
+	  "start": "electron i"
+  }
+}
