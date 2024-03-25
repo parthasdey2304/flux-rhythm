@@ -1,12 +1,24 @@
 {
-  "name" :"Flux Rhythm",
+  "name": "Flux Rhythm",
   "version": "1.0.0",
-  "author": "Parth Vastavik",
   "main": "main.js",
-  "dependencies": {
-    "electron": "^29.1.5"
+  "author": "Parth Vastavik",
+  "devDependencies": {
+    "electron": "^29.1.5",
+    "electron-build": "^0.0.3",
+    "electron-builder": "^24.13.3",
+    "electron-reload": "^2.0.0-alpha.1"
   },
-  "scripts" : {
-	  "start": "electron i"
+  "scripts": {
+    "start": "electron ."
+  },
+  "build": {
+    "appId": "com.example.myapp",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis"
+    }
   }
 }

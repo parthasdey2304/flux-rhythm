@@ -1,10 +1,13 @@
 const { app, BrowserWindow } = require('electron');
 const path = require('node:path');
+const reload = require('electron-reload');
+
+reload(__dirname);
 
 const createWindow = () => {
 	const win = new BrowserWindow({
-		width: 800,
-		height: 600,
+		width: 1000,
+		height: 800,
 		webPreferences: {
 			preload: path.join(__dirname, "preload.js")
 		}
