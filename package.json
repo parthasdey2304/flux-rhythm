@@ -1,7 +1,7 @@
 {
   "name": "Flux Rhythm",
   "version": "1.0.0",
-  "main": "main.js",
+  "main": "app.js",
   "author": "Parth Vastavik",
   "devDependencies": {
     "electron": "^29.1.5",
@@ -20,5 +20,8 @@
     "win": {
       "target": "nsis"
     }
+  },
+  "dependencies": {
+    "youtube-music-api": "^1.0.6"
   }
 }
