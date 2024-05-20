@@ -1,0 +1,41 @@
+{
+    "name": "flux-rhythm",
+    "version": "1.0.0",
+    "main": "electron/main.js",
+    "scripts": {
+        "start": "electron .",
+        "build": "electron-builder"
+    },
+    "build": {
+        "appId": "com.example.fluxrhythm",
+        "directories": {
+            "output": "dist"
+        },
+        "files": [
+            "client/dist/**/*",
+            "server/**/*",
+            "electron/**/*",
+            "package.json"
+        ],
+        "extraResources": [
+            {
+                "from": "server",
+                "to": "server",
+                "filter": [
+                    "**/*"
+                ]
+            }
+        ],
+        "win": {
+            "target": "nsis",
+            "icon": "build/icon.ico"
+        }
+    },
+    "devDependencies": {
+        "electron": "^13.1.7",
+        "electron-builder": "^22.14.13"
+    },
+    "dependencies": {
+        "express": "^4.17.1"
+    }
+}

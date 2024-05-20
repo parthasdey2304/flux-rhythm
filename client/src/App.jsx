@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import SearchBox from './components/SearchBox';
 import MusicPlayer from './components/MusicPlayer';
+import NetworkStatusToast from './components/NetworkStatusToast.';
 
 function App() {
     const [audioUrl, setAudioUrl] = useState('');
@@ -12,6 +13,7 @@ function App() {
             </header>
             <SearchBox setAudioUrl={setAudioUrl} />
             <MusicPlayer audioUrl={audioUrl} />
+            <NetworkStatusToast />
         </div>
     );
 }
